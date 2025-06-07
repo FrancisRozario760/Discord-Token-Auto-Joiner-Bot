@@ -1,4 +1,4 @@
-import { Client, EmbedBuilder, GatewayIntentBits, Guild } from "discord.js";
+import { Client, EmbedBuilder, GatewayIntentBits } from "discord.js";
 import discordSelfBot from "discord.js-selfbot-v13";
 import dotenv from "dotenv";
 import utils from "./utils";
@@ -95,7 +95,7 @@ client.on("interactionCreate", async (i) => {
             tokenClient.on("error", (error) => {
                 console.error(`[tokens] Error with token ${tokenClient.user?.tag}:${error} [${token}]`);
             });
-            await tokenClient.login(token).catch(error => console.log(`invalid token ${token}`));
+            await tokenClient.login(token).catch(() => console.log(`invalid token ${token}`));
         }
     }
 });
