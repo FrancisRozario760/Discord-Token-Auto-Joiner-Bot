@@ -87,7 +87,7 @@ run.bat
 Once the bot is running, use the `/jointokens` command in Discord and provide the **guild ID** to start joining tokens.
 
 ```
-/jointokens guildid:123456789012345678
+/jointokens guildid: your guild id
 ```
 
 ---
