@@ -54,7 +54,7 @@ REDIRECT_URL=http://localhost:3000
 
 ---
 
-### **6. Add Tokens**
+### **6. Add Discord Tokens**
 Create a `tokens.txt` file in the root directory and add each self-bot token on a new line:
 ```
 token_1
